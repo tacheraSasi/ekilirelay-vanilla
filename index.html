@@ -1,13 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="https://relay.ekilie.com/img/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Ekilirelay - Vanilla JS</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="form-container">
+        <h1 class="form-title">Send a Message</h1>
+        <form id="form">
+          <label for="to">To</label>
+          <input type="email" id="to" placeholder="Recipient's email" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Email subject" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="btn-submit">Send</button>
+        </form>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

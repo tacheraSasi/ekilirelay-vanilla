@@ -16,6 +16,6 @@ export const sender = (to, subject, message, headers) => {
       }
     })
     .catch((error) => {
-      console.log("Error:", error);
+      console.log("Error:", error);//catching an error
     });
 };
